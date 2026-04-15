@@ -1,0 +1,37 @@
+/************************
+        CSS RESET
+************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/************************
+        UTILITY
+************************/
+
+.btn {
+    --bs-border-radius: 20px;
+    border: none;
+}
+
+/* prova css */
+
+body {
+    background-color: blueviolet;
+}
