@@ -16,7 +16,15 @@ function generateMail () {
                 // Converto la risposta in JSON e la mando al successivo .then
                 return response.json();
                 
-            })
-
+            })            
+            .then(function (jsonData) {
+                // prendiamo la risposta di json che è la mail che ci interessa
+                const email = jsonData.response;
+                // Creo un nuovo tag <li>
+                const li = document.createElement('li');
+                li.textContent = email;
+                // Lo aggiungo alla lista <ul>
+                emailList.appendChild(li);
+            });
     }
 };
